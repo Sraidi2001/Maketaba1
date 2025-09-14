@@ -1,0 +1,520 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <!-- SEO Meta Tags -->
+  <title>مكتب [اسم مكتبك] - كتب ولوازم مدرسية في [مدينتك]</title>
+  <meta name="description" content="أفضل مكتب للكتب المدرسية والجامعية ولوازم المدرسة في [مدينتك]. جودة عالية، أسعار مناسبة، خصومات موسمية، توصيل مجاني. اتصل بنا الآن!">
+  <meta name="keywords" content="مكتب كتب, لوازم مدرسية, كتب مدرسية, كتب جامعية, أدوات مكتبية, مكتب في [مدينتك], librairie scolaire, school supplies, bookstore, [مدينتك]">
+
+  <!-- hreflang for multilingual SEO -->
+  <link rel="alternate" hreflang="ar" href="https://yourdomain.com/ar" />
+  <link rel="alternate" hreflang="en" href="https://yourdomain.com/en" />
+  <link rel="alternate" hreflang="fr" href="https://yourdomain.com/fr" />
+  <link rel="canonical" href="https://yourdomain.com/ar" />
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "مكتب [اسم مكتبك]",
+    "image": "https://yourdomain.com/logo.png",
+    "url": "https://yourdomain.com/ar",
+    "telephone": "[رقم الهاتف]",
+    "priceRange": "DH 50 - DH 200",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "[ضع عنوان المكتب هنا]",
+      "addressLocality": "[مدينتك]",
+      "postalCode": "[الرمز البريدي]",
+      "addressCountry": "MA"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 34.0297,
+      "longitude": -6.8459
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "08:00",
+        "closes": "20:00"
+      }
+    ],
+    "sameAs": [
+      "https://facebook.com/yourpage",
+      "https://instagram.com/yourpage"
+    ]
+  }
+  </script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --primary:#1e90ff;
+      --accent:#ff7a00;
+      --bg:#f7f9fc;
+      --card:#ffffff;
+      font-family: 'Roboto', sans-serif;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:#222;transition: all 0.3s ease}
+    a{color:inherit;text-decoration:none}
+    
+    /* Language Switcher */
+    .lang-switcher {
+      position: fixed;
+      top: 16px;
+      right: 16px;
+      z-index: 1000;
+      display: flex;
+      gap: 6px;
+    }
+    .lang-btn {
+      background: rgba(255,255,255,0.9);
+      color: #333;
+      border: none;
+      border-radius: 16px;
+      padding: 6px 12px;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: all 0.2s;
+    }
+    .lang-btn.active {
+      background: var(--primary);
+      color: white;
+      transform: scale(1.05);
+    }
+    .lang-btn:hover {
+      background: #e6e6e6;
+    }
+
+    header{background:linear-gradient(90deg,var(--primary),#1579c6);color:#fff;padding:28px 16px}
+    .container{max-width:1100px;margin:0 auto;padding:18px}
+    .topbar{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .logo{display:flex;align-items:center;gap:12px}
+    .logo img{width:64px;height:64px;border-radius:8px;object-fit:cover}
+    .logo h1{font-size:20px;margin:0}
+    nav a{margin-left:14px;font-weight:500}
+    .hero{display:flex;gap:24px;align-items:center;padding:28px 0}
+    .hero .left{flex:1}
+    .hero h2{font-size:28px;margin:0 0 12px}
+    .hero p{margin:0 0 18px;line-height:1.6}
+    .btn{display:inline-block;padding:12px 20px;border-radius:10px;background:var(--accent);color:#fff;font-weight:700}
+    .btn.secondary{background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.14)}
+    section{padding:26px 0}
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+    .card{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 6px 18px rgba(15,20,30,0.06)}
+    .card h3{margin:0 0 8px}
+    .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px}
+    .gallery img{width:100%;height:200px;object-fit:cover;border-radius:8px}
+    .offers{display:flex;gap:12px;flex-wrap:wrap}
+    .offer{flex:1;min-width:220px;background:linear-gradient(90deg,#fff8f0,#fff);padding:16px;border-radius:10px}
+    .contact-grid{display:grid;grid-template-columns:1fr 320px;gap:18px}
+    .contact-card{background:var(--card);padding:16px;border-radius:10px}
+    form input, form textarea{width:100%;padding:10px;border:1px solid #e6e9ee;border-radius:8px;margin-bottom:10px}
+    .map{width:100%;height:260px;border-radius:10px;overflow:hidden}
+    footer{background:#0f1724;color:#fff;padding:22px}
+    footer .foot-inner{display:flex;justify-content:space-between;align-items:center;gap:12px}
+    .whatsapp{position:fixed;left:20px;bottom:20px;background:#25D366;color:#fff;padding:14px;border-radius:50px;box-shadow:0 6px 18px rgba(0,0,0,0.2);display:flex;align-items:center;gap:10px;font-weight:700}
+
+    /* RTL Support */
+    [dir="rtl"] .topbar { justify-content: space-between; }
+    [dir="rtl"] nav a { margin-left: 14px; margin-right: unset; }
+    [dir="rtl"] .hero .left { text-align: right; }
+    [dir="rtl"] .contact-grid { grid-template-columns: 320px 1fr; }
+    [dir="rtl"] .contact-grid > div:first-child { order: 2; }
+    [dir="rtl"] .contact-grid > div:last-child { order: 1; }
+
+    /* LTR Support */
+    [dir="ltr"] .topbar { justify-content: space-between; }
+    [dir="ltr"] nav a { margin-right: 14px; margin-left: unset; }
+    [dir="ltr"] .hero .left { text-align: left; }
+    [dir="ltr"] .contact-grid { grid-template-columns: 1fr 320px; }
+    [dir="ltr"] .contact-grid > div:first-child { order: 1; }
+    [dir="ltr"] .contact-grid > div:last-child { order: 2; }
+
+    @media (max-width:800px){
+      .hero{flex-direction:column;align-items:flex-start}
+      .contact-grid{grid-template-columns:1fr}
+      .topbar{flex-direction:column;align-items:flex-start}
+      .lang-switcher { top: 10px; right: 10px; }
+      .lang-btn { padding: 5px 10px; font-size: 11px; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Language Switcher -->
+  <div class="lang-switcher">
+    <button class="lang-btn" data-lang="ar">العربية</button>
+    <button class="lang-btn" data-lang="en">English</button>
+    <button class="lang-btn" data-lang="fr">Français</button>
+  </div>
+
+  <header>
+    <div class="container topbar" style="background-color: #0f1724;border-radius:12px;"  >
+      <div class="logo">
+        <img src="./image/png1.png" alt="شعار المكتب">
+        <div>
+          <h1 id="site-title">مكتب [اسم مكتبك]</h1>
+          <div style="opacity:0.9;font-size:13px" id="tagline">كتب ولوازم مدرسية • جودة وأسعار مناسبة</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#home" id="nav-home">الرئيسية</a>
+        <a href="#about" id="nav-about">من نحن</a>
+        <a href="#products" id="nav-products">منتجاتنا</a>
+        <a href="#offers" id="nav-offers">عروض</a>
+        <a href="#contact" id="nav-contact">اتصل بنا</a>
+      </nav>
+    </div>
+    <div class="container hero" id="home">
+      <div class="left">
+        <h2 id="hero-title">مكتبكم الموثوق لشراء الكتب واللوازم المدرسية</h2>
+        <p id="hero-desc">نوفر لكم مجموعة واسعة من الكتب المدرسية والجامعية، أدوات مكتبية، لوازم فنية وحقائب مدرسية. جودة مضمونة وخدمة ودودة.</p>
+        <a class="btn" href="#products" id="btn-discover">اكتشف منتجاتنا</a>
+        <a class="btn secondary" style="margin-left:10px" href="#contact" id="btn-contact">تواصل معنا الآن</a>
+      </div>
+      <div class="right" style="width:360px">
+        <img src="./image/png2.png" alt="picture" style="width:100%; border-radius:12px;object-fit:cover;">
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="about">
+      <div class="card" style="padding:18px;border-radius:12px;background:linear-gradient(180deg,#fff,#f8fbff)">
+        <h2 id="about-title">من نحن</h2>
+        <p id="about-desc">منذ [سنة التأسيس] ونحن نخدم أبناء مدينتنا بتوفير كل ما يحتاجونه من كتب وأدوات مدرسية ومكتبية. نؤمن أن التعليم رحلة تبدأ بأدوات صحيحة، لذلك نسعى دائمًا لتقديم منتجات موثوقة بأسعار مناسبة.</p>
+      </div>
+    </section>
+
+    <section id="products">
+      <h2 id="products-title">منتجاتنا وخدماتنا</h2>
+      <div class="cards" style="margin-top:12px">
+        <div class="card">
+          <h3 id="prod1-title">📚 كتب مدرسية وجامعية</h3>
+          <p id="prod1-desc">جميع المستويات والمواد الدراسية، كتب معتمدة ومترجمة.</p>
+        </div>
+        <div class="card">
+          <h3 id="prod2-title">✏️ لوازم مدرسية ومكتبية</h3>
+          <p id="prod2-desc">أقلام، دفاتر، أدوات مكتبية بجودة عالية وأسعار متنوعة.</p>
+        </div>
+        <div class="card">
+          <h3 id="prod3-title">🎨 لوازم فنية</h3>
+          <p id="prod3-desc">ألوان، أوراق رسم، أدوات للرسم والتلوين للهواة والمحترفين.</p>
+        </div>
+        <div class="card">
+          <h3 id="prod4-title">🎒 حقائب وتجهيزات العودة للمدرسة</h3>
+          <p id="prod4-desc">تجهيز كامل للطالب مع عروض خاصة خلال الموسم الدراسي.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <h2 id="gallery-title">أجواء من مكتبنا</h2>
+      <div class="gallery" style="margin-top:12px">
+        <img src="./image/png7.jfif" alt="صورة">
+        <img src="./image/png4.jfif" alt="صورة">
+        <img src="./image/png5.jfif" alt="صورة">
+        <img src="./image/png6.jfif" alt="صورة">
+      </div>
+    </section>
+
+    <section id="offers">
+      <h2 id="offers-title">عروضنا المميزة</h2>
+      <div class="offers" style="margin-top:12px">
+        <div class="offer">
+          <strong id="offer1-title">خصم العودة للمدارس 20%</strong>
+          <p id="offer1-desc">على تشكيلة الحقائب والأدوات المحددة. العرض لفترة محدودة.</p>
+        </div>
+        <div class="offer">
+          <strong id="offer2-title">تجهيز حقيبة كاملة</strong>
+          <p id="offer2-desc">حزمة شاملة: دفاتر، أقلام، أدوات رسم بسعر مخفض عند الشراء الجماعي.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2 id="contact-title">تواصل معنا</h2>
+      <div class="contact-grid" style="margin-top:12px">
+        <div>
+          <div class="contact-card">
+            <h3 id="contact-info-title">معلومات التواصل</h3>
+            <p>📍 <strong id="address-label">العنوان:</strong> <span id="address">Ksar El kebir</span></p>
+            <p>📞 <strong id="phone-label">الهاتف:</strong> <span id="phone">0700435618</span></p>
+            <p>💬 <strong id="whatsapp-label">واتساب:</strong> <span id="whatsapp-number">0700435618</span></p>
+            <p>✉️ <strong id="email-label">البريد:</strong> <span id="email">mohamedredasraidi.gmail.com</span></p>
+            <p style="margin-top:8px" id="contact-note">يمكنك أيضاً زيارة المكتب خلال ساعات العمل أو تواصل معنا عبر الزر الأخضر (واتساب) أسفل الصفحة.</p>
+          </div>
+
+          <div style="margin-top:12px" class="contact-card">
+            <h3 id="form-title">أرسل لنا رسالة</h3>
+            <form action="https://formspree.io/f/yourformid" method="POST">
+              <input type="text" name="name" placeholder="الاسم" required>
+              <input type="tel" name="phone" placeholder="رقم الهاتف" required>
+              <textarea name="message" rows="4" placeholder="رسالتك" required></textarea>
+              <button class="btn" type="submit">أرسل الرسالة</button>
+            </form>
+            <p id="successMessage" style="display:none;color:green;margin-top:10px;">تم إرسال رسالتك بنجاح ✅</p>
+          </div>
+        </div>
+        <div>
+          <div class="contact-card">
+            <h3 id="map-title">موقعنا على الخريطة</h3>
+            <div class="map">
+              <iframe width="100%" height="100%" frameborder="0" style="border:0" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d..." allowfullscreen aria-hidden="false" tabindex="0"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container foot-inner">
+      <div>جميع الحقوق محفوظة © <span id="footer-site-title">مكتبة REDA</span> - <span id="year"></span></div>
+      <div>تابعونا على: <a href="#" id="fb-link">فيسبوك</a> • <a href="#" id="ig-link">إنستغرام</a></div>
+    </div>
+  </footer>
+
+  <a class="whatsapp" href="https://wa.me/212XXXXXXXXX?text=مرحبًا%20أرغب%20بمعلومات%20حول%20الكتب" target="_blank">
+    واتساب
+  </a>
+
+  <script>
+    // Translation Object
+    const translations = {
+      ar: {
+        siteTitle: " REDA مكتبة ",
+        tagline: "كتب ولوازم مدرسية • جودة وأسعار مناسبة",
+        heroTitle: "مكتبكم الموثوق لشراء الكتب واللوازم المدرسية",
+        heroDesc: "نوفر لكم مجموعة واسعة من الكتب المدرسية والجامعية، أدوات مكتبية، لوازم فنية وحقائب مدرسية. جودة مضمونة وخدمة ودودة.",
+        btnDiscover: "اكتشف منتجاتنا",
+        btnContact: "تواصل معنا الآن",
+        aboutTitle: "من نحن",
+        aboutDesc: "منذ [سنة التأسيس] ونحن نخدم أبناء مدينتنا بتوفير كل ما يحتاجونه من كتب وأدوات مدرسية ومكتبية. نؤمن أن التعليم رحلة تبدأ بأدوات صحيحة، لذلك نسعى دائمًا لتقديم منتجات موثوقة بأسعار مناسبة.",
+        productsTitle: "منتجاتنا وخدماتنا",
+        prod1Title: "📚 كتب مدرسية وجامعية",
+        prod1Desc: "جميع المستويات والمواد الدراسية، كتب معتمدة ومترجمة.",
+        prod2Title: "✏️ لوازم مدرسية ومكتبية",
+        prod2Desc: "أقلام، دفاتر، أدوات مكتبية بجودة عالية وأسعار متنوعة.",
+        prod3Title: "🎨 لوازم فنية",
+        prod3Desc: "ألوان، أوراق رسم، أدوات للرسم والتلوين للهواة والمحترفين.",
+        prod4Title: "🎒 حقائب وتجهيزات العودة للمدرسة",
+        prod4Desc: "تجهيز كامل للطالب مع عروض خاصة خلال الموسم الدراسي.",
+        galleryTitle: "أجواء من مكتبنا",
+        offersTitle: "عروضنا المميزة",
+        offer1Title: "خصم العودة للمدارس 20%",
+        offer1Desc: "على تشكيلة الحقائب والأدوات المحددة. العرض لفترة محدودة.",
+        offer2Title: "تجهيز حقيبة كاملة",
+        offer2Desc: "حزمة شاملة: دفاتر، أقلام، أدوات رسم بسعر مخفض عند الشراء الجماعي.",
+        contactTitle: "تواصل معنا",
+        contactInfoTitle: "معلومات التواصل",
+        addressLabel: "العنوان:",
+        phoneLabel: "الهاتف:",
+        whatsappLabel: "واتساب:",
+        emailLabel: "البريد:",
+        contactNote: "يمكنك أيضاً زيارة المكتب خلال ساعات العمل أو تواصل معنا عبر الزر الأخضر (واتساب) أسفل الصفحة.",
+        formTitle: "أرسل لنا رسالة",
+        mapTitle: "موقعنا على الخريطة",
+        footerSiteTitle: "مكتبة REDA",
+        fbLink: "فيسبوك",
+        igLink: "إنستغرام",
+        navHome: "الرئيسية",
+        navAbout: "من نحن",
+        navProducts: "منتجاتنا",
+        navOffers: "عروض",
+        navContact: "اتصل بنا"
+      },
+      en: {
+        siteTitle: "LIBRARY REDA",
+        tagline: "School Books & Supplies • Quality & Affordable Prices",
+        heroTitle: "Your Trusted Office for School Books and Supplies",
+        heroDesc: "We provide a wide range of school and university textbooks, office supplies, art materials, and school bags. Guaranteed quality and friendly service.",
+        btnDiscover: "Discover Our Products",
+        btnContact: "Contact Us Now",
+        aboutTitle: "About Us",
+        aboutDesc: "Since [founding year], we have been serving our community by providing all necessary books and school supplies. We believe education begins with the right tools, and we strive to offer reliable products at fair prices.",
+        productsTitle: "Our Products & Services",
+        prod1Title: "📚 School & University Textbooks",
+        prod1Desc: "All levels and subjects, certified and translated books.",
+        prod2Title: "✏️ School & Office Supplies",
+        prod2Desc: "Pens, notebooks, office tools with high quality and varied prices.",
+        prod3Title: "🎨 Art Materials",
+        prod3Desc: "Colors, drawing paper, tools for artists and amateurs.",
+        prod4Title: "🎒 Back-to-School Bags & Kits",
+        prod4Desc: "Complete student kits with special seasonal offers.",
+        galleryTitle: "Inside Our Office",
+        offersTitle: "Special Offers",
+        offer1Title: "Back-to-School Discount 20%",
+        offer1Desc: "On selected bags and supplies. Limited time offer.",
+        offer2Title: "Complete Bag Kit",
+        offer2Desc: "Full bundle: notebooks, pens, art tools at discounted price when purchased together.",
+        contactTitle: "Contact Us",
+        contactInfoTitle: "Contact Information",
+        addressLabel: "Address:",
+        phoneLabel: "Phone:",
+        whatsappLabel: "WhatsApp:",
+        emailLabel: "Email:",
+        contactNote: "You can also visit our office during working hours or contact us via the green WhatsApp button below.",
+        formTitle: "Send Us a Message",
+        mapTitle: "Location on Map",
+        footerSiteTitle: "LIBRARY REDA",
+        fbLink: "Facebook",
+        igLink: "Instagram",
+        navHome: "Home",
+        navAbout: "About",
+        navProducts: "Products",
+        navOffers: "Offers",
+        navContact: "Contact"
+      },
+      fr: {
+        siteTitle: "BIBLIOTHÈQUE REDA ",
+        tagline: "Livres et fournitures scolaires • Qualité et prix abordables",
+        heroTitle: "Votre boutique fiable pour les livres et fournitures scolaires",
+        heroDesc: "Nous proposons une large gamme de manuels scolaires et universitaires, des fournitures de bureau, des matériaux artistiques et des sacs d'école. Qualité garantie et service amical.",
+        btnDiscover: "Découvrez nos produits",
+        btnContact: "Contactez-nous maintenant",
+        aboutTitle: "À propos de nous",
+        aboutDesc: "Depuis [année de création], nous servons notre communauté en fournissant tous les livres et fournitures scolaires nécessaires. Nous croyons que l'éducation commence avec les bons outils, et nous nous efforçons de proposer des produits fiables à des prix justes.",
+        productsTitle: "Nos Produits & Services",
+        prod1Title: "📚 Manuels Scolaires et Universitaires",
+        prod1Desc: "Tous les niveaux et matières, livres certifiés et traduits.",
+        prod2Title: "✏️ Fournitures Scolaires et de Bureau",
+        prod2Desc: "Stylos, cahiers, fournitures de bureau de haute qualité et à prix variés.",
+        prod3Title: "🎨 Matériaux Artistiques",
+        prod3Desc: "Couleurs, papier à dessin, outils pour artistes et amateurs.",
+        prod4Title: "🎒 Sac à dos et kits de rentrée scolaire",
+        prod4Desc: "Kit complet pour l'élève avec offres spéciales pendant la saison scolaire.",
+        galleryTitle: "Dans notre boutique",
+        offersTitle: "Offres Spéciales",
+        offer1Title: "Réduction Rentrée Scolaire 20%",
+        offer1Desc: "Sur les sacs et fournitures sélectionnés. Offre limitée dans le temps.",
+        offer2Title: "Kit Sac Complet",
+        offer2Desc: "Lot complet : cahiers, stylos, fournitures artistiques à prix réduit lors d'achat groupé.",
+        contactTitle: "Contactez-nous",
+        contactInfoTitle: "Informations de contact",
+        addressLabel: "Adresse :",
+        phoneLabel: "Téléphone :",
+        whatsappLabel: "WhatsApp :",
+        emailLabel: "Email :",
+        contactNote: "Vous pouvez également visiter notre boutique pendant les heures d'ouverture ou nous contacter via le bouton vert WhatsApp ci-dessous.",
+        formTitle: "Envoyez-nous un message",
+        mapTitle: "Notre emplacement sur la carte",
+        footerSiteTitle: "BIBLIOTHÈQUE REDA",
+        fbLink: "Facebook",
+        igLink: "Instagram",
+        navHome: "Accueil",
+        navAbout: "À propos",
+        navProducts: "Produits",
+        navOffers: "Offres",
+        navContact: "Contact"
+      }
+    };
+
+    // Initialize language from localStorage or default to 'ar'
+    let currentLang = localStorage.getItem('lang') || 'ar';
+    document.documentElement.lang = currentLang;
+
+    // Apply translation
+    function applyTranslations(lang) {
+      const t = translations[lang];
+      if (!t) return;
+
+      // Update UI elements
+      document.getElementById('site-title').textContent = t.siteTitle;
+      document.getElementById('tagline').textContent = t.tagline;
+      document.getElementById('hero-title').textContent = t.heroTitle;
+      document.getElementById('hero-desc').textContent = t.heroDesc;
+      document.getElementById('btn-discover').textContent = t.btnDiscover;
+      document.getElementById('btn-contact').textContent = t.btnContact;
+      document.getElementById('about-title').textContent = t.aboutTitle;
+      document.getElementById('about-desc').textContent = t.aboutDesc;
+      document.getElementById('products-title').textContent = t.productsTitle;
+      document.getElementById('prod1-title').textContent = t.prod1Title;
+      document.getElementById('prod1-desc').textContent = t.prod1Desc;
+      document.getElementById('prod2-title').textContent = t.prod2Title;
+      document.getElementById('prod2-desc').textContent = t.prod2Desc;
+      document.getElementById('prod3-title').textContent = t.prod3Title;
+      document.getElementById('prod3-desc').textContent = t.prod3Desc;
+      document.getElementById('prod4-title').textContent = t.prod4Title;
+      document.getElementById('prod4-desc').textContent = t.prod4Desc;
+      document.getElementById('gallery-title').textContent = t.galleryTitle;
+      document.getElementById('offers-title').textContent = t.offersTitle;
+      document.getElementById('offer1-title').textContent = t.offer1Title;
+      document.getElementById('offer1-desc').textContent = t.offer1Desc;
+      document.getElementById('offer2-title').textContent = t.offer2Title;
+      document.getElementById('offer2-desc').textContent = t.offer2Desc;
+      document.getElementById('contact-title').textContent = t.contactTitle;
+      document.getElementById('contact-info-title').textContent = t.contactInfoTitle;
+      document.getElementById('address-label').textContent = t.addressLabel;
+      document.getElementById('phone-label').textContent = t.phoneLabel;
+      document.getElementById('whatsapp-label').textContent = t.whatsappLabel;
+      document.getElementById('email-label').textContent = t.emailLabel;
+      document.getElementById('contact-note').textContent = t.contactNote;
+      document.getElementById('form-title').textContent = t.formTitle;
+      document.getElementById('map-title').textContent = t.mapTitle;
+      document.getElementById('footer-site-title').textContent = t.footerSiteTitle;
+      document.getElementById('fb-link').textContent = t.fbLink;
+      document.getElementById('ig-link').textContent = t.igLink;
+      document.getElementById('nav-home').textContent = t.navHome;
+      document.getElementById('nav-about').textContent = t.navAbout;
+      document.getElementById('nav-products').textContent = t.navProducts;
+      document.getElementById('nav-offers').textContent = t.navOffers;
+      document.getElementById('nav-contact').textContent = t.navContact;
+
+      // Set direction
+      document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+
+      // Update active button
+      document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.remove('active');
+        if (btn.dataset.lang === lang) btn.classList.add('active');
+      });
+    }
+
+    // Init on load
+    applyTranslations(currentLang);
+
+    // Language switcher logic
+    document.querySelectorAll('.lang-btn').forEach(button => {
+      button.addEventListener('click', () => {
+        const lang = button.dataset.lang;
+        localStorage.setItem('lang', lang);
+        currentLang = lang;
+        applyTranslations(lang);
+      });
+    });
+
+    // Footer Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Form success message
+    const form = document.querySelector('form');
+    form.addEventListener('submit', function(e){
+        e.preventDefault();
+        const formData = new FormData(form);
+        fetch(form.action, {
+            method: 'POST',
+            body: formData,
+            headers: { 'Accept': 'application/json' }
+        }).then(response => {
+            if(response.ok){
+                document.getElementById('successMessage').style.display = 'block';
+                form.reset();
+            } else {
+                alert('حدث خطأ أثناء إرسال الرسالة ❌');
+            }
+        }).catch(error => alert('حدث خطأ في الاتصال ❌'));
+    });
+  </script>
+</body>
+</html>
